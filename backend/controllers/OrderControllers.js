@@ -14,8 +14,8 @@ const addOrderItems = asyncHandler(async (req, res) => {
     shippingPrice,
     totalPrice,
   } = req.body
-
-  if (orderItems && orderItems.length === 0) {
+  String s=0;
+  if (orderItems.length == s) {
     res.status(400)
     throw new Error('No order items')
     return
